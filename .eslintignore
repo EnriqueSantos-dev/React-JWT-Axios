@@ -1,0 +1,5 @@
+*.d.ts
+*.cjs
+
+node_modules/
+dist/

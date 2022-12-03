@@ -1,0 +1,44 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb",
+		"airbnb-typescript",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["react", "prettier"],
+	"rules": {
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/dot-notation": "off",
+		"import/prefer-default-export": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "warn",
+		"react/function-component-definition": [
+			2,
+			{ "namedComponents": ["function-declaration", "arrow-function"] }
+		],
+		"jsx-a11y/label-has-associated-control": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "": "never",
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+	}
+}
